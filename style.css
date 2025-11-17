@@ -1,65 +1,136 @@
+/* FONT & RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
     align-items: center;
+    padding: 15px 40px;
     background: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.nav-links li {
-    display: inline-block;
-    margin: 0 15px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.logo-circle {
+    width: 35px;
+    height: 35px;
+    background: orange;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #444;
     font-weight: 600;
 }
 
+.nav-links a:hover {
+    color: orange;
+}
+
 .cart-btn {
-    background: #6a5acd;
+    background: orange;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* Hero Section */
+.badge {
+    background: white;
+    color: orange;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+/* HERO */
 .hero {
-    padding: 100px 20px;
     text-align: center;
-    background: linear-gradient(45deg, #ff6f6f, #ff8f8f);
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #ff7f32, #ff9966);
     color: white;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 48px;
+    margin: 0;
 }
 
-/* Kategori */
-.gallery {
-    padding: 40px 20px;
+.hero p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* PRODUK */
+.produk {
+    padding: 50px 20px;
     text-align: center;
 }
 
-.category-list button {
-    border: 1px solid #ff6f6f;
-    background: white;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
+.kategori {
+    margin-top: 20px;
 }
 
-.category-list .active {
-    background: #ff6f6f;
+.kategori button {
+    border: 1px solid orange;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.kategori button:hover {
+    background: orange;
     color: white;
+}
+
+.kategori .aktif {
+    background: orange;
+    color: white;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
 }
