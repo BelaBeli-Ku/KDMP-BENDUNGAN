@@ -1,136 +1,40 @@
-/* FONT & RESET */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+/* PANEL KERANJANG */
+.cart-panel {
+    width: 350px;
+    background: #fff7e6;
+    padding: 20px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 15px;
 }
 
-/* NAVBAR */
-.navbar {
+.cart-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    margin: 8px 0;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-}
-
-.logo-circle {
-    width: 35px;
-    height: 35px;
-    background: orange;
+.remove {
+    background: red;
     color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 600;
-}
-
-.nav-links a:hover {
-    color: orange;
-}
-
-.cart-btn {
-    background: orange;
-    color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    padding: 4px 8px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
 }
 
-.badge {
-    background: white;
-    color: orange;
-    padding: 3px 8px;
+.wa-btn {
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
     border-radius: 10px;
-    margin-left: 5px;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(45deg, #ff7f32, #ff9966);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero p {
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-/* PRODUK */
-.produk {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.kategori {
-    margin-top: 20px;
-}
-
-.kategori button {
-    border: 1px solid orange;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin: 5px;
+    font-weight: bold;
     cursor: pointer;
-    font-weight: 600;
-}
-
-.kategori button:hover {
-    background: orange;
-    color: white;
-}
-
-.kategori .aktif {
-    background: orange;
-    color: white;
-}
-
-/* RESPONSIVE MOBILE */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
 }
