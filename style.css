@@ -156,3 +156,25 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+/* Tombol Hapus — gaya dasar */
+.delete-btn {
+    background-color: #ff6767;   /* warna merah lembut */
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;       /* animasi halus */
+}
+
+/* Efek saat di-hover */
+.delete-btn:hover {
+    background-color: #ff3b3b;   /* lebih merah */
+    transform: scale(1.06);      /* sedikit membesar */
+}
+
+/* Efek klik */
+.delete-btn:active {
+    transform: scale(0.93);
+}
