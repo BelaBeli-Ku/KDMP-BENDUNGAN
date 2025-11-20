@@ -47,7 +47,7 @@ function checkoutWA() {
     let total = cart.reduce((a, b) => a + b.price, 0);
     pesan += `%0ATotal: Rp ${total.toLocaleString()}`;
 
-    const nomor = "6281234567890"; // Nomor WA koperasi
+    const nomor = "6281225694523"; // Nomor WA koperasi
     window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
 }
 
